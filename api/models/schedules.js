@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import professional from "./professional";
 
 // definindo o schema do agendamento, com os campos name, description, price e duration, todos obrigatórios
 const scheduleSchema = new mongoose.Schema({

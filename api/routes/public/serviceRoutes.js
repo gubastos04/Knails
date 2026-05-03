@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import serviceController from '../controllers/serviceController.js';
+import serviceController from '../../controllers/serviceController.js';
 
 // criando um roteador para as rotas relacionadas aos serviços
 const router = Router();

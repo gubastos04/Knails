@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
-import professional from "./professional";
 
-// definindo o schema do dia bloqueado, com os campos name, description, price e duration, todos obrigatórios
+// definindo o schema do bloqueio de data, com os campos professional, date e reason, todos obrigatórios
 const blockedDateSchema = new mongoose.Schema({
   professional: { type: mongoose.Schema.Types.ObjectId, ref: "Professional", required: true },
   date: { type: Date, required: true },

@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-// definindo o schema do agendamento, com os campos name, description, price e duration, todos obrigatórios
+// definindo o schema do agendamento, com os campos service, professional, clientName, clientPhone, date, startTime, endTime e status, todos obrigatórios
 const appointmentSchema = new mongoose.Schema({
   service: { type: mongoose.Schema.Types.ObjectId, ref: "Service", required: true },
   professional: { type: mongoose.Schema.Types.ObjectId, ref: "Professional", required: true },
